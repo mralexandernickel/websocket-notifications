@@ -25,6 +25,15 @@ input "#{src_path}" do
   end
 end
 
+# compile and concat all serverside coffeescripts...
+output "srv"
+input "#{src_path}/srv" do
+  match "*.coffee" do
+    coffee_script
+    concat "websocket-notifications.js"
+  end
+end
+
 # build bootstrap.js...
 output "#{assets_path}/lib/bootstrap"
 input "#{src_path}/lib/bootstrap" do
