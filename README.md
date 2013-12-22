@@ -1,6 +1,4 @@
-scratch
-=======
+Websocket Notifications
+=======================
 
-"from-scratch" starting point
-
-* needs a serverside script for recaptcha verification, depending on language
+Just playing around with Websockets in Combination with Redis Pub/Sub
